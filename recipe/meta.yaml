@@ -1,5 +1,4 @@
-{% set name = "spyndex" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: spyndex
@@ -7,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/spyndex/spyndex-{{ version }}.tar.gz
-  sha256: 039c3b9bd0b24613e03aa26b79a44aee677d6722c68c5dbed6686a833432e3e0
+  sha256: 0c46511905ccbf5b5687b32f9555f26c57ec9bf47e8c18a116cbd9f25923e031
 
 build:
   noarch: python
@@ -38,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python
 
 about:
   home: https://github.com/awesome-spectral-indices/spyndex
