@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: spyndex
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/spyndex/spyndex-{{ version }}.tar.gz
-  sha256: 0c46511905ccbf5b5687b32f9555f26c57ec9bf47e8c18a116cbd9f25923e031
+  sha256: c7b2acef1da6f749392a10b4f0215edadf787cdae03b85844f6584c053404fa0
 
 build:
   noarch: python
@@ -21,14 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - dask-core >=2023.7.0
-    - matplotlib-base
-    - pandas >=2.0.3
-    - pyarrow
     - python-box >=6.0
     - requests
-    - seaborn
-    - xarray >=2023.6.0
 
 test:
   imports:
